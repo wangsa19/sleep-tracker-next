@@ -1,5 +1,6 @@
 import AddRecord from "@/components/AddNewRecord";
 import Guest from "@/components/Guest";
+import RecordChart from "@/components/RecordChart";
 import { currentUser } from "@clerk/nextjs/server";
 
 export default async function HomePage() {
@@ -47,7 +48,7 @@ export default async function HomePage() {
         </div>
 
         <div className="space-y-6">
-
+          <RecordChart/>
         </div>
       </div>
       <div className="max-w-7xl mx-auto"></div>
